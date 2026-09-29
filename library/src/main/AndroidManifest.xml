@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 库模块清单：无 applicationId、无组件声明，纯工具库 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+</manifest>

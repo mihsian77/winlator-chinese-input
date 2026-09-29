@@ -1,0 +1,22 @@
+// 顶层构建文件：声明整个工程共享的仓库与 Android 插件版本
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle 插件版本
+        classpath "com.android.tools.build:gradle:8.5.0"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,3 @@
+// 工程设置：声明根工程名与包含的模块
+rootProject.name = "winlator-chinese-input"
+include ':library'

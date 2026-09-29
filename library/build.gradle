@@ -1,0 +1,27 @@
+// library 模块构建脚本：Android 库（com.android.library）
+apply plugin: 'com.android.library'
+
+android {
+    // 命名空间（AGP 8 要求），不设置 applicationId
+    namespace 'com.winlator.input'
+    compileSdk 34
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 34
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // 仅使用 JUnit 做本地单元测试，不引入第三方运行时库
+    testImplementation 'junit:junit:4.13.2'
+}
